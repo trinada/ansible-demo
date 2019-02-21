@@ -1,0 +1,8 @@
+---
+- hosts: all-hosts
+  vars:
+    file_name: test
+  tasks:
+
+    - name: Creating {{file_name}}
+      shell: touch {{file_name}}
