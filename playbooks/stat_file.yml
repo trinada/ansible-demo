@@ -1,0 +1,12 @@
+- hosts: all-hosts
+  var:
+
+  tasks:
+    
+    - name: retrieve the data of {{file_name}}
+      stat:
+        path: "/tmp/{{file_name}}"
+      register: file
+
+    - debug: 
+        var: file
