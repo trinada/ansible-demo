@@ -1,6 +1,6 @@
 - hosts: all-hosts
   var:
-
+    file_name: test
   tasks:
     
     - name: retrieve the data of {{file_name}}
