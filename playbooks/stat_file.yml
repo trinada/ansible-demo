@@ -1,5 +1,5 @@
-- hosts: all-hosts
-  var:
+- hosts: localhost
+  vars:
     file_name: test
   tasks:
     
