@@ -9,4 +9,9 @@
       register: file
 
     - debug: 
+<<<<<<< HEAD
         var: file
+=======
+        msg: "the file exists"
+      when: file.stat.exists == true
+>>>>>>> 7d7900f15536d6afc656e46e8b931b820f783286
